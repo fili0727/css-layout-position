@@ -1,38 +1,57 @@
-/*
 .container {
-    width: 60vw;
-    border: 2px dashed green;
+  width: 60vw;
+  border: 2px dashed green;
+  position: relative;
+  overflow: hidden;
 }
-*/
-
 .box {
-    width: 200px;
-    height: 70px;
-    font-family: sans-serif;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 200px;
+  height: 70px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .static {
-    background-color: #ff1d00;
+  background-color: #ff1d00;
+  position: static;
+  border: 3px solid black;
+  scale: 1;
+  rotate: 0;
 }
-
 .fixed {
-    background-color: #ffeb00;
-    color: black;
+  background-color: #ffeb00;
+  color: black;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 9;
+  scale: 0.5;
+  translate: 50% 0%;
 }
 
 .sticky {
-    background-color: #ff9ecf;
+  background-color: #ff9ecf;
+  position: sticky;
+  top: 15%;
+  translate: 100% 100%;
+  rotate: -45deg;
 }
 
 .relative {
-    background-color: #1fd81f;
+  background-color: #1fd81f;
+  position: relative;
+  left: 15%;
+  border: 3px solid black;
+  rotate: 90deg;
 }
 
 .absolute {
-    background-color: #0180fc;
+  background-color: #0180fc;
+  position: absolute;
+  top: 15%;
+  left: 90%;
 }
